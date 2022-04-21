@@ -1,5 +1,7 @@
+name: SlackMessage
 on:
-  status
+  status:
+
   workflow_dispatch:
   
 jobs:
