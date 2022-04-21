@@ -1,4 +1,3 @@
 # gradle-test
 
-MYSECETS
-https://hooks.slack.com/services/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
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
