@@ -4,6 +4,6 @@ import org.junit.Test;
 public class GradleTest {
     @Test
     public void verifyNoExceptionThrown() {
-        1GradleTutorial.main(new String[]{});
+        GradleTutorial.main(new String[]{});
     }
 }
