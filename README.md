@@ -1,3 +1,3 @@
 # gradle-test
 
-[![Java CI with Gradle](https://github.com/rosshoss4/gradle-test/actions/workflows/gradle.yml/badge.svg)](https://github.com/rosshoss4/gradle-test/actions/workflows/gradle.yml)
+https://hooks.slack.com/services/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
