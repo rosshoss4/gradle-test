@@ -3,9 +3,9 @@ plugins {
 }
 
 
-//repositories {
-//    mavenCentral()
-//}
+repositories {
+    mavenCentral()
+}
 
 dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
