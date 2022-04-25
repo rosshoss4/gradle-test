@@ -2,7 +2,7 @@ package com.unitTest;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
  
-public class TemperatureCalculatorTest {
+public class TemperatureCalculatorTest1 {
     @Test
     public void testToDegree(){
         TemperatureCalculator calculator = new TemperatureCalculator();
