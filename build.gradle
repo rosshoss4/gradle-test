@@ -28,8 +28,8 @@ dependencies {
 publishing {
                 publications {
                     mavenJava(MavenPublication) {
-                        groupId = 'com.RocketPartners.doohp'
-                        artifactId = 'doohp'
+                        groupId = 'com.ross'
+                        artifactId = 'ross'
                         version = '1.0.0'
                         from components.java
                     }
