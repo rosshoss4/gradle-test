@@ -32,5 +32,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
     - name: Build with Gradle
-      run: ./gradlew build
- 
+      run: |
+        export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain dohp-codeartifact-domain --domain-owner 002445826379 --query authorizationToken --output text
+        ./gradlew build
+        
