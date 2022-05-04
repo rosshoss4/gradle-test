@@ -5,41 +5,24 @@ plugins {
     id 'maven-publish'
 }
 
-//jar {
-  //  manifest {
-    //    attributes 'Main-Class': 'com.samsung.TemperatureCalculator.java'
-  //  }
-//}
-
-repositories {
-    mavenCentral()
-    maven { url 'https://test-domain.d.codeartifact.us-west-1.amazonaws.com/maven/dohp-codeartifact-Test-repo/'
-                        credentials {
-                            username "aws"
-                            password System.env.CODEARTIFACT_AUTH_TOKEN
-                        }
-    }                    
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.samsung.TemperatureCalculator.java'
+    }
 }
+
+//repositories {
+  //  mavenCentral()
+    //maven { url 'https://test-domain.d.codeartifact.us-west-1.amazonaws.com/maven/dohp-codeartifact-Test-repo/'
+      //                  credentials {
+        //                    username "aws"
+          //                  password System.env.CODEARTIFACT_AUTH_TOKEN
+            //            }
+   // }                    
+//}
 
 dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
 }
 
-publishing {
-                publications {
-                    mavenJava(MavenPublication) {
-                        groupId = 'com.ross'
-                        artifactId = 'ross'
-                        version = '1.0.0'
-                        from components.java
-                    }
-                }
-                repositories {
-                    maven { url 'https://test-domain.d.codeartifact.us-west-1.amazonaws.com/maven/dohp-codeartifact-Test-repo/'
-                        credentials {
-                            username "aws"
-                            password System.env.CODEARTIFACT_AUTH_TOKEN
-                        }
-                    }
-                }
-            }               
+             
