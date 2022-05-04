@@ -19,8 +19,8 @@ jar {
     enabled = true
 }
 
-//repositories {
-  //  mavenCentral()
+repositories {
+    mavenCentral()
     //maven { url 'https://test-domain.d.codeartifact.us-west-1.amazonaws.com/maven/dohp-codeartifact-Test-repo/'
       //                  credentials {
         //                    username "aws"
